@@ -1,4 +1,4 @@
-<!-- hide -->
+n<!-- hide -->
 # Hello World with Vanilla JS
  <small>🇪🇸 [Spanish version](./README.es.md).</small>
 
