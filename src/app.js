@@ -24,8 +24,16 @@ function cardGenerate() {
   let indexNumbers = Math.floor(Math.random() * numbers.length);
   document.querySelector("#top").innerHTML = suits[indexSuits];
   document.querySelector("#button").innerHTML = suits[indexSuits];
-  document.querySelector("#number").innerHTML = suits[indexSuits];
+  document.querySelector("#number").innerHTML = numbers[indexNumbers];
+
+  let isRed = suits[indexSuits] == "♦" || suits[indexSuits] == "♥";
+  document.querySelector("#top").className = isRed
+    ? "text-danger"
+    : "text-dark";
+  document.querySelector("#button").className = isRed
+    ? "text-danger"
+    : "text-dark";
 }
 window.onload = function() {
-  cardGenerate;
+  cardGenerate();
 };
